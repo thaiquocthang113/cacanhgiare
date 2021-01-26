@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbCCGR">
+  <DataContextMoniker Name="/dbCCGRDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bbce75dc-7440-4869-8744-28ffcada1311" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/dbCCGRDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e04d462d-8eb2-4e6d-b735-ee8aa09d2099" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="38075974-9dbe-45d0-870d-bf6123326f7f" absoluteBounds="6.5, 5.125, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/dbCCGRDataContext/DONDAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6bf2f3dd-1905-4365-8e19-05531d6381a9" absoluteBounds="6.515, 5.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84187fad-06c7-4cdc-843d-027353ada475" absoluteBounds="3.75, 5, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/dbCCGRDataContext/KHACHHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="988eff3a-f655-4983-9906-b3fd2bc2c4c1" absoluteBounds="3.765, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="487ecba8-7398-48a4-abac-4da2499975aa" absoluteBounds="0.75, 1.625, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbCCGRDataContext/LOAIHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="762e79e3-47e8-4f62-8bbb-04c92f7641f1" absoluteBounds="0.765, 2.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5b0317b-e3ac-42af-8efe-f1f3b9d301d1" absoluteBounds="0.75, 5.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbCCGRDataContext/NCC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="98533da6-d93c-4c2b-8f12-66b78b72f98d" absoluteBounds="0.765, 5.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2364363-739d-498a-9b03-e9b4fb55b2a9" absoluteBounds="3.5, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbCCGRDataContext/SANPHAM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5c56f83-4bff-4131-a570-46a36e47409d" absoluteBounds="3.515, 1.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 6.10659912109375); (6.5 : 6.10659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbCCGRDataContext/KHACHHANG/KHACHHANG_DONDAT" />
+      <nodes>
+        <classShapeMoniker Id="84187fad-06c7-4cdc-843d-027353ada475" />
+        <classShapeMoniker Id="38075974-9dbe-45d0-870d-bf6123326f7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.22199625651042); (3.5 : 2.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbCCGRDataContext/LOAIHANG/LOAIHANG_SANPHAM" />
+      <nodes>
+        <classShapeMoniker Id="487ecba8-7398-48a4-abac-4da2499975aa" />
+        <classShapeMoniker Id="d2364363-739d-498a-9b03-e9b4fb55b2a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.37621330413662); (3.125 : 5.00121330413662); (3.125 : 2.91230139778646); (3.5 : 2.91230139778646)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbCCGRDataContext/NCC/NCC_SANPHAM" />
+      <nodes>
+        <classShapeMoniker Id="b5b0317b-e3ac-42af-8efe-f1f3b9d301d1" />
+        <classShapeMoniker Id="d2364363-739d-498a-9b03-e9b4fb55b2a9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

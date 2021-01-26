@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "SPTheoLoaiHang";
+    Layout = "~/Views/LoaiHang/LoaiHang.cshtml";
+}
+
+<div id="kind" class="text-center">
+    <div class="container">
+        <h2>Sản phẩm theo loại</h2>
+        <div class="row">
+            @foreach (var SANPHAM in Model)
+            {
+                <div class="col-xs-3 col-sm-4">
+                    <div class="features-item">
+                        <h3>@SANPHAM.TENSP</h3>
+                        <a href="@Url.Action("Details", "CCGR", new { id = SANPHAM.MASP })">
+                            <img alt="@SANPHAM.TENSP" src="~/HinhAnhSanPham/@SANPHAM.ANH" width=200px height=200px />
+                        </a>
+                    </div>
+                    <div class="menu-item-price">
+                        <h3>@SANPHAM.GIABAN VND</h3>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+

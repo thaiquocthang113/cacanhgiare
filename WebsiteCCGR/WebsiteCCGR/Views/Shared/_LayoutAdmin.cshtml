@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cá Cảnh Giá Rẻ</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Shop Homepage - Start Bootstrap Temlate </title>
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="~/Images/CCGR LOGO.jpg">
+
+
+    <!-- Bootstrap -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Stylesheet
+        ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <!--link button-->
+    <link href="StyleSheet1.css">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation
+        ==========================================-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Trang Chủ", "Index", "Admin")</li>
+                    <li>
+                        @Html.ActionLink("Loại Hàng", "LoaiHang", "VLXD")
+                    </li>
+
+                    <li>@Html.ActionLink("Quản Lý Sản Phẩm", "SanPham", "Admin")</li>
+
+                    @*<li><a> @Html.Action("GioHangPartial", "GioHang") </a></li>*
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- Header -->
+                        <header id="header">
+                            <div class="intro">
+                                <div class="overlay">
+                                    @*Test*@
+
+                    <div class="item active">
+                    </div>
+                    <div class="item active">
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="intro-text">
+                                <h1>Ca Canh Gia Re</h1>
+                                <p>Thắng Bá định giá mọi loại cá</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </header>
+        <div>
+            @RenderBody()
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="text-center">
+            <div class="container text-center">
+                <div class="col-md-4">
+                    <h3>Liên hệ</h3>
+                    <div class="contact-item">
+                        <p>Phone: 0799995988</p>
+                        <p>0522927988</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Địa chỉ</h3>
+                    <div class="contact-item">
+                        <p>475A Điện Biên Phủ, phường 25</p>
+                        <p>quận Bình Thạnh, tp.HCM</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Giờ mở cửa</h3>
+                    <div class="contact-item">
+                        <p>T2-T6: 7:00 AM - 9:00 PM</p>
+                        <p>T7-CN: 7:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3>Send us a message</h3>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container text-center">
+                <div class="col-md-6">
+                    <p>&copy; . Ca canh gia re <a href="https://www.facebook.com/Thangcacanhgiare" rel="nofollow"></a></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.facebook.com/Thangcacanhgiare"><i class="fa"><img src="~/Images/Facebook.jpg" width=30px height=30px /></i></a></li>
+                            <li><a href="#"><i class="fa"><img src="~/Images/CCGR LOGO.jpg" width=30px height=30px /></i></a></li>
+                            <li><a href="#"><i class="fa"><img src="~/Images/youtube.jpg" width=30px height=30px /></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="~/Scripts/jquery.1.11.1.js"></script>
+        <script src="~/Scripts/bootstrap.js"></script>
+        <script src="~/Scripts/SmoothScroll.js"></script>
+        <script src="~/Scripts/jqBootstrapValidation.js"></script>
+        <script src="~/Scripts/contact_me.js"></script>
+        <script src="~/Scripts/main.js"></script>
+</body>
+</html>
+

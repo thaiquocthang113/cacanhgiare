@@ -1,0 +1,324 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cá Cảnh Giá Rẻ</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title> Shop Homepage - Start Bootstrap Temlate </title>
+    <!-- Favicons
+        ================================================== -->
+    <link rel="shortcut icon" href="~/Image/CCGR LOGO.jpg">
+    <!-- Stylesheet
+        ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!----font chu css-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <!-- Theme Made By www.w3schools.com -->
+    <title>Bootstrap Theme Company Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/css3W.css" s rel="stylesheet" type="text/css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a  <ul class="navbar-nav ml-auto">
+                        @if (Session["Taikhoan"] != null)
+                        {
+                            <p>Hello, @Session["Username"]</p>
+                            <a class="" style="color:white" href="@Url.Action("DangXuat","NguoiDung")">Đăng Xuất</a>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                @*<a class="nav-link">*@@Html.ActionLink("Đăng nhập", "Dangnhap", "Nguoidung")@*</a>*@
+                            </li>
+                        }
+
+                        @if (Session["Taikhoan"] == null)
+                        {
+                            <li class="nav-item">
+                                @*<a class="nav-link">*@@Html.ActionLink("Đăng kí", "Dangky", "Nguoidung")@*</a>*@
+                            </li>
+                        }</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">TRANG CHỦ</a></li>
+                    <li><a href="#services">DỊCH VỤ</a></li>
+                    <li><a href="#product">SẢN PHẨM</a></li>
+                    <li><a href="https://shopee.vn" target="_blank">SHOPPEE</a></li>
+                    <li><a href="#contact">LIÊN HỆ </a></li>
+                    <li><a href="">DEAL HỜI  </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <div id="myCarousel" class="carousel slide " data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="~/Image/hinhnenca.jpg" alt="Chicago" style="width: 100%;height: 500px !important">
+                </div>
+                <div class="item active">
+                    <img src="~/Image/backgroundca.jpg" alt="Los Angeles" style="width:100%;height: 500px !important">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Container (About Section) -->
+
+
+    <div id="about" class="container-fluid bg-warning">
+        <div class="row">
+            <div class="col-sm-4">
+                <span  <img src="~/Image/CCGR LOGO.jpg" width=30px height=30px /></i> </span>
+            </div>
+            <div class="col-sm-8">
+                <h2>Cửa hàng Cá phá giá thị trường</h2><br>
+                <h4>
+                    <strong>Về chúng tôi</strong>
+                    Cửa hàng Cá cảnh giá được thành lập vào đầu năm 2020. Cho đến nay ngót nghét 1 năm hoạt động.Chuyên cung cấp các loại cá và phụ kiện giá rẻ để phục vụ bà con
+                </h4><br>
+                <p>
+                    <strong></strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Services Section) -->
+    <!--<div id="services" class="container-fluid text-center">
+        <h2>SERVICES</h2>
+        <h4>What we offer</h4>
+        <br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-off logo-small"></span>
+                <h4>POWER</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-heart logo-small"></span>
+                <h4>LOVE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-lock logo-small"></span>
+                <h4>JOB DONE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row slideanim">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-leaf logo-small"></span>
+                <h4>GREEN</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-certificate logo-small"></span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-wrench logo-small"></span>
+                <h4 style="color:#303030;">HARD WORK</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+    </div>-->
+
+
+    <div>
+        @RenderBody()
+    </div>
+    <!-- Contact Section -->
+    <div id="contact" class="text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Liên hệ</h3>
+                <div class="contact-item">
+                    <p>Phone: (+84) 7.9999.5988</p>
+                    <p>(+84) 522927988</p>
+                    <p>Email: quocthangthai@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Địa chỉ</h3>
+                <div class="contact-item">
+                    <p>475A Điện Biên Phủ, phường 25</p>
+                    <p>quận Bình Thạnh, tp.HCM</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h3>Giờ mở cửa</h3>
+                <div class="contact-item">
+                    <p>T2-T6: 7:00 AM - 9:00 PM</p>
+                    <p>T7-CN: 7:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="section-title text-center">
+                    <h3>Send us a message</h3>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+                        <div class="about-text ">
+                            <h2><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d489.89109308579293!2d106.71453648391552!3d10.801450206657913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175295afa77382f%3A0xc889e64e3bdeea11!2sHutech!5e0!3m2!1svi!2s!4v1611592553360!5m2!1svi!2s" width="750" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></h2>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="footer">
+
+        <!--call-->
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            Add rows here
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="col-md-6">
+                <p>&copy; 2021. Fish store <a href="https://www.facebook.com/Thangcacanhgiare" rel="nofollow"> Quoc Thang </a></p>
+            </div>
+            <div class="col-md-6">
+                <div class="social">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Thangcacanhgiare"><i class="fa"><img src="~/Image/Facebook.jpg" width=30px height=30px /></i></a></li>
+                        <li><a href="#"><i class="fa"><img src="~/Image/CCGR LOGO.jpg" width=30px height=30px /></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCKFfJuvSOqqqrQhC-NReErQ"><i class="fa"><img src="~/Image/youtube.jpg" width=30px height=30px /></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+</body>
+</html>
